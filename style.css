@@ -114,7 +114,7 @@ footer p {
     bottom: 55%; /* Positioning above the vertical center */
 }
 
-#ducks-bubble {
+#hiking-bubble {
     left: calc(50% - 300px); /* Consistent with the other left side bubble */
     top: 55%; /* Positioning below the vertical center */
 }
@@ -124,7 +124,7 @@ footer p {
     bottom: 55%; /* Positioning above the vertical center */
 }
 
-#other-bubble {
+#drone-bubble {
     right: calc(50% - 300px); /* Consistent with the other right side bubble */
     top: 55%; /* Positioning below the vertical center */
 }
