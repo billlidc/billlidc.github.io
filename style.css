@@ -66,10 +66,65 @@ footer p {
     margin: 0.5em 0;
 }
 
+.bubbles-container {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #selfie {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    margin: 10px; /* Adds some space around the image */
-    object-fit: cover; /* Ensures the image covers the area without being stretched */
+    object-fit: cover;
+    
+}
+
+.bubble {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    animation: floatBubble 5s ease-in-out infinite; /* Use the animation in action */
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.bubble img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes floatBubble {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Positioning Bubbles */
+#wrx-bubble {
+    left: calc(50% - 300px); /* Positioning slightly to the left of the selfie */
+    bottom: 55%; /* Positioning above the vertical center */
+}
+
+#ducks-bubble {
+    left: calc(50% - 300px); /* Consistent with the other left side bubble */
+    top: 55%; /* Positioning below the vertical center */
+}
+
+#music-bubble {
+    right: calc(50% - 300px); /* Positioning slightly to the right of the selfie */
+    bottom: 55%; /* Positioning above the vertical center */
+}
+
+#other-bubble {
+    right: calc(50% - 300px); /* Consistent with the other right side bubble */
+    top: 55%; /* Positioning below the vertical center */
 }
