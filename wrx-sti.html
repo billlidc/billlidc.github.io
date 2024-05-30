@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WRX STI Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fbfaf2; /* light background color */
+            color: #333; /* dark text for readability */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .photos img {
+            width: 100%; /* Ensures image fills the width of the container */
+            height: 500px; /* Sets a fixed height for the images */
+            object-fit: cover; /* Crops the image to fit within the specified dimensions */
+            border-radius: 8px; /* Optional: rounded corners for images */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adding shadow for depth */
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <h1>WRX STI Gallery</h1>
+        <div class="photos">
+            <img src="res/wrx/wrx1.JPG" alt="WRX STI Photo 1">
+            <img src="res/wrx/wrx2.JPG" alt="WRX STI Photo 2">
+            <img src="res/wrx/wrx3.JPG" alt="WRX STI Photo 3">
+            <img src="res/wrx/wrx4.JPG" alt="WRX STI Photo 4">
+            <img src="res/wrx/wrx5.JPG" alt="WRX STI Photo 5">
+            <img src="res/wrx/wrx6.JPG" alt="WRX STI Photo 6">
+            <!-- Add more images as needed -->
+
+        </div>
+    </div>
+</body>
+</html>
